@@ -8,7 +8,7 @@ Simple login page with pure PHP.
 
 ***Installation:***
  1. Paste the files into the web folder you want to protect with a login
-    page. In the source is provided an example index.html for reference.
+    page. In the source is provided an example index.php for reference.
  2. Create a new table called Users in your database, with columns like this:
 
 
