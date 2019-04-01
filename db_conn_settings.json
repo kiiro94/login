@@ -1,6 +1,6 @@
 {
   "servername" : "localhost",
-  "db_name" : "db_dev",
+  "db_name" : "database name",
   "username" : "root",
-  "password" : "56471Asd"
+  "password" : "password"
 }

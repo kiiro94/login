@@ -1,31 +1,37 @@
+<!-- example main page -->
 <html>
   <head>
     <title> Login </title>
-    <script> </script> 
-    <?php include "checkLogin.php" ?>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="loginStyle.css">
+    <script> </script>
+
+    <?php 
+      //check login status
+      //THIS NEEDS TO BE INCLUDED IN EVERY PAGE THAT CHECKS LOGIN STATUS
+      include "checkLogin.php";
+    ?>
   </head>
 
-  <body>
-    <form class="login" action="index.php" method="post" autocomplete="off">
+  <body style="background-color: #fafafa">
+    <div>
+      Logged in! <br>
+      Register new user: <br>
+    </div>
+
+    <!-- register form -->
+    <form class="register" action="register.php" method="post" autocomplete="off">
       <input type="text" name="user" placeholder="username">
       <input type="password" name="pass" placeholder="password">
-      <button type="submit">login</button>
-    </form>
-    
-    <form class="create" action="register.php" method="post" autocomplete="off">
-      <input type="text" name="user" placeholder="username">
-      <input type="password" name="pass" placeholder="password">
+      <br>
       <button type="submit">register</button>
     </form>
 
-      <br>
-
-      <?php
-        if ($connected) { echo "Logged."; }
-        
-        if (isset($_GET["reg"]) && $_GET["reg"] === "1") {
-          echo "Registered succesfully.";
-        }
-      ?>
+    <?php
+      if (isset($_GET["reg"]) && $_GET["reg"] === "1") {
+        echo "Registered succesfully.";
+      }
+    ?>
   </body>
+
 </html>
