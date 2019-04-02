@@ -6,11 +6,13 @@
     <link rel="stylesheet" href="loginStyle.css">
     <script> </script>
 
+    <!-- This is the code you have to copy in your web pages -->
     <?php 
       //check login status
       //THIS NEEDS TO BE INCLUDED IN EVERY PAGE THAT CHECKS LOGIN STATUS
       include "checkLogin.php";
     ?>
+    <!-- End code to copy -->
   </head>
 
   <body style="background-color: #fafafa">

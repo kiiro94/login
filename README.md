@@ -14,7 +14,7 @@ Simple login page with pure PHP.
 
     | id  | username | password             |
     |-----|----------|----------------------|
-    | int | varchar  | varchar (size >= 60) |
+    | int | varchar  | varchar (size >= 64) |
 
 
  3. Change the file `db_conn_settings.json` with the credentials of your Mysql server.
