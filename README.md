@@ -15,9 +15,9 @@ Simple login page with pure PHP.
  5. A table called `Users` will be automatically created, with a template like this:
 
 
-    | id  | username | password          |
-    |-----|----------|-------------------|
-    | int | varchar  | varchar (size=64) |
+    | id  | username | password          | registered_datetime         |
+    |-----|----------|-------------------|-----------------------------|
+    | int | varchar  | varchar (size=64) | datetime(current_timestamp) |
 
 
  6. On the first login, the page will ask you to register the first user.
